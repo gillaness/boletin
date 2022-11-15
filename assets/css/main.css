@@ -7,8 +7,13 @@ a{
     color: chocolate;
 }
 
+a:hover{
+    opacity: 0.5;
+}
+
 .titulo{
     text-transform: uppercase;
+    text-align: center;
 }
 
 /*Contenedor se refiere a toda la sección del body*/
@@ -30,6 +35,31 @@ justify-content: center;
     background-color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(121, 23, 23, 0.23); /*diferenciaHorizontal diferenciaVertical desenfoque amplitud color*/
     border-radius: .25em;
+    position: relative;
+    padding: 1.8em;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em; 
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #027373;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(121, 23, 23, 0.23);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .parrafo{
@@ -37,7 +67,7 @@ justify-content: center;
     font-weight: 100;
 }
 
-.fa-star, .fa-star-half{
+.fa-star, .fa-star-half-stroke{
     color: #e33217
 }
 
@@ -61,6 +91,17 @@ justify-content: center;
     border-color: #027373; */
     padding-bottom: 1em;
     border-bottom: solid 2px #027373;
+    font-size: 1.5em;;
+}
+
+.quote{
+    font-weight: bold;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
 }
 
 .position{
@@ -68,6 +109,8 @@ justify-content: center;
     color:white;
     padding: .5em;
     border-radius: .25em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
 }
 
 /* Color Theme Swatches in Hex 
